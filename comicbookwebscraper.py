@@ -24,8 +24,12 @@ def cb_scraper():
     title = soup.find('div', {'class': "headline-box"})
     print(title)
 
-    if 'Star Wars' in title.text or 'Mandalorian' in title.text or 'Yoda' in title.text:
+    if 'Star Wars' in title.text:
         notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')
+    if 'Mandalorian' in title.text:
+        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')
+    if 'Yoda' in title.text:
+        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')        
 
 
 if __name__ == '__main__':
