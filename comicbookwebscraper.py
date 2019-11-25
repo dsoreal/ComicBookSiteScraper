@@ -25,11 +25,7 @@ def cb_scraper():
     print(title)
 
     if 'Star Wars' in title.text:
-        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')
-    if 'Mandalorian' in title.text:
-        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')
-    if 'Yoda' in title.text:
-        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')        
+        notifier.show_toast('Comicbook.com', 'A New Star Wars article is available', duration=10, icon_path='CB_logo.ico')      
 
 
 if __name__ == '__main__':
